@@ -1,26 +1,12 @@
 // Get the navbar
 var header = document.querySelector("header");
 
-const container = document.getElementById("container");
-
-const checkpoint = 400;
-
-const textbox = document.getElementById("textbox")
+const container = document.getElementsByClassName("container")[0];
 
 window.addEventListener("scroll", parralax)
 
 // When the user scrolls the page, execute myFunction 
 window.addEventListener("scroll", myFunction)
-
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll <= checkpoint) {
-    textbox.style.opacity = 1 - currentScroll / checkpoint;
-  }
-  else {
-    textbox.style.opacity = 0;
-  }
-})
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
