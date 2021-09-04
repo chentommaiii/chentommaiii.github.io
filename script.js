@@ -1,6 +1,12 @@
 // Get the navbar
 var header = document.querySelector("header");
 
+var sideNav = document.getElementById("mySideNav");
+var main = document.getElementById("main");
+var header = document.getElementById("header");
+
+var sideNavIcon = document.getElementsByClassName("sidenav-icon")[0];
+
 const container = document.getElementsByClassName("container")[0];
 
 window.addEventListener("scroll", parralax)
@@ -14,16 +20,16 @@ function myFunction() {
 }
 
 function openNav() {
-  document.getElementById("mySideNav").style.width = "300px";
-  document.getElementById("main").style.left="300px";
-  document.getElementById("header").style.marginLeft = "300px";
+  sideNav.style.width = "300px";
+  main.style.left="300px";
+  header.style.marginLeft = "300px";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
-  document.getElementById("mySideNav").style.width = "0";
-  document.getElementById("main").style.left="0";
-  document.getElementById("header").style.marginLeft = "0";
+  sideNav.style.width = "0";
+  main.style.left="0";
+  header.style.marginLeft = "0";
 }
 
 function parralax() {
