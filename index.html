@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="style.css" />
     <style>
@@ -17,10 +18,10 @@
       <a href="/bouncing-ball/3D_tutorial.html">Mobile App Development</a>
       <a href="/bouncing-ball/3D_tutorial.html">Game Development</a>
     </div>
-    <div id="main">
-      <header id="header">
+    <div class="main">
+      <header class="header">
         <div class="sidenav-icon"></div>
-        <div id="logo">Tommy Chen</div>
+        <div class="logo">Tommy Chen</div>
       </header>
       <div class="overlay"></div>
       <div id="container-home" class="container">
@@ -36,15 +37,20 @@
               to your company.
             </p>
           </div>
+
           <div class="intro-card-white">
             <img src="images/tommy_edit_square.jpg" class="profile-img" />
-            <h2 id="contact-me">Contact me:</h2>
-            <a href="mailto:tommycxy22@gmail.com">
-              <button class="contact-btn">Email</button>
-            </a>
-            <a onclick="window.open('http://mywa.link/vcroe3no', 'mywindow');">
-              <button class="contact-btn">WhatsApp</button>
-            </a>
+            <div class="contact-container">
+              <h2 id="contact-me">Contact me:</h2>
+              <a href="mailto:tommycxy22@gmail.com">
+                <button class="contact-btn">Email</button>
+              </a>
+              <a
+                onclick="window.open('http://mywa.link/vcroe3no', 'mywindow');"
+              >
+                <button class="contact-btn">WhatsApp</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -66,7 +72,7 @@
               <h3>Mobile App Development<br />UI/UX Design</h3>
               <div class="view-project">
                 <h4>View Project</h4>
-                <img src="images/Arrow.png" style="padding-left: 20px" />
+                <div class="view-project-arrow"></div>
               </div>
             </div>
           </div>
@@ -78,7 +84,7 @@
               <h3>Mobile App Development<br />UI/UX Design</h3>
               <div class="view-project">
                 <h4>View Project</h4>
-                <img src="images/Arrow.png" style="padding-left: 20px" />
+                <div class="view-project-arrow"></div>
               </div>
             </div>
           </div>
@@ -94,7 +100,7 @@
               <h3>Web Development<br />UI/UX Design</h3>
               <div class="view-project">
                 <h4>View Project</h4>
-                <img src="images/Arrow.png" style="padding-left: 20px" />
+                <div class="view-project-arrow"></div>
               </div>
             </div>
           </div>
@@ -113,7 +119,7 @@
       </script>
     </div>
     <footer>
-      <p style="color: black">Tommy Chen, 2021</p>
+      <p style="color: black">Proudly Presented to You By Tommy Chen, 2021</p>
     </footer>
   </body>
 </html>

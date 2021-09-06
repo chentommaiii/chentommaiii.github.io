@@ -1,11 +1,11 @@
 // Get the navbar
 var header = document.querySelector("header");
 
-var logo = document.getElementById("logo");
+var logo = document.getElementsByClassName("logo")[0];
 
 var sideNav = document.getElementById("mySideNav");
-var main = document.getElementById("main");
-var header = document.getElementById("header");
+var main = document.getElementsByClassName("main")[0];
+var header = document.getElementsByClassName("header")[0];
 
 var sideNavIcon = document.getElementsByClassName("sidenav-icon")[0];
 
