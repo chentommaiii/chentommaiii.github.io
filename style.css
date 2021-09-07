@@ -31,8 +31,6 @@ h1 {
   font-weight: 600;
   font-size: 4.5rem;
   line-height: 5rem;
-  text-align: left;
-  color: #fff;
   padding: 25px;
 }
 
@@ -41,8 +39,6 @@ h2 {
   font-weight: 600;
   font-size: 2rem;
   line-height: 3rem;
-  text-align: left;
-  color: #fff;
   padding: 25px;
 }
 
@@ -78,7 +74,7 @@ header .logo:hover {
 
 .sidenav-icon {
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 0.25rem 0.25rem 0;
   display: inline-block;
   padding: 5px;
   margin: 5px;
@@ -103,13 +99,13 @@ header .logo:hover {
   left: 0;
   background-color: rgba(0, 0, 0);
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 5%; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
 .side-nav a {
-  padding: 8px 8px 8px 32px;
+  padding: 1rem 1rem 1rem 2rem;
   text-decoration: none;
   font-size: 1.3rem;
   color: #818181;
@@ -262,6 +258,7 @@ header .logo:hover {
 
 .intro-card-glass h1 {
   padding: 0 10% 3% 10%;
+  color: #fff;
 }
 
 .intro-card-glass p {
@@ -374,7 +371,7 @@ header .logo:hover {
   border: solid white;
   border-width: 0 0.2rem 0.2rem 0;
   display: inline-block;
-  padding: 0.1rem;
+  padding: 0.05rem;
   margin: 0.3rem;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -471,13 +468,19 @@ footer p {
 
 .textbox h1 {
   padding: 0 0 0 20px;
+  color: #fff;
+}
+
+.textbox h2 {
+  color: #fff;
 }
 
 /* Hero banner textbox text */
 .textbox p {
+  font-size: 1.3rem;
+  line-height: 2rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
   color: #fff;
   padding: 0px 40px 25px 25px;
 }
@@ -485,26 +488,34 @@ footer p {
 .content-img {
   width: 100%;
   height: 70vh;
-  margin-top: 80px;
+  margin-top: 5%;
   object-fit: cover;
+  border-radius: 1rem;
+}
+
+#content-container__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 #content-container__content h2 {
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 3rem;
+  line-height: 3rem;
   color: #000;
-  text-align: center;
-  padding: 50px 20px 20px 20px;
+  padding: 4%;
 }
 
 #content-container__content p {
-  text-align: center;
   font-style: normal;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 1.3rem;
+  line-height: 2rem;
   color: #000;
+  width: 50%;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -633,6 +644,8 @@ footer p {
     width: 100%;
     border-radius: 0 1rem 1rem 0;
     overflow: hidden;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   .intro-card-glass h1 {
@@ -674,18 +687,18 @@ footer p {
   }
 
   .long-card-content {
-    padding: 1rem 0 0 1rem;
+    padding: 3rem 0 0 1rem;
     height: 80%;
   }
 
   .long-card-content h2 {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
 
   .view-project {
     right: 0;
-    bottom: 0;
+    bottom: 10%;
     padding: 0;
   }
 
@@ -709,6 +722,45 @@ footer p {
 
   footer p {
     font-size: 0.8rem;
+  }
+
+  /* Content page */
+  .textbox {
+    padding-top: 20%;
+    width: 90%;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .textbox h2 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .textbox p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .content-img {
+    align-self: center;
+    height: 15em;
+    border-radius: 0.5rem;
+  }
+
+  #content-container__content {
+    padding-top: 5%;
+  }
+
+  #content-container__content h2 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  #content-container__content p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    width: 38ch;
   }
 }
 
