@@ -4,6 +4,10 @@
   --bounceSpeed: 1.5s;
 }
 
+html {
+  font-size: 1vw;
+}
+
 .textbox {
   position: absolute;
   height: 100%;
@@ -14,16 +18,15 @@
   text-align: center;
   color: white;
   font-family: "Work Sans", sans-serif;
-  font-size: 55px;
-  padding: 20px;
-  margin: 20px;
+  font-size: 2rem;
+  padding: 1em;
 }
 
 .textbox p {
   text-align: center;
   color: white;
   font-family: "Work Sans", sans-serif;
-  font-size: 21px;
+  font-size: 1rem;
 }
 
 body {
@@ -245,3 +248,17 @@ body {
   background-size: 100%, 1em 1em;
 }
 /*# sourceMappingURL=style.css.map */
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 3.5vw;
+  }
+
+  .textbox h1 {
+    font-size: 2rem;
+  }
+
+  .textbox p {
+    font-size: 1rem;
+  }
+}
