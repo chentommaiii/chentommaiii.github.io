@@ -13,6 +13,8 @@ const container = document.getElementsByClassName("container")[0];
 
 let sideNavIsOpen = false;
 
+let sideNavWidth = "20%";
+
 window.addEventListener("scroll", parralax)
 
 // When the user scrolls the page, execute myFunction 
@@ -23,13 +25,27 @@ function myFunction() {
   header.classList.toggle("sticky", window.scrollY > 0);
 }
 
+// When user changes window size, execute resizeSideNav to resize side navbar
+resizeSideNav();
+
+window.onresize = resizeSideNav;
+
+function resizeSideNav () {
+
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    sideNavWidth = "75%";
+  } else {
+    sideNavWidth = "20%";
+  }
+}
+
 logo.onclick = function() {
 
   if (sideNavIsOpen == false) {
 
-    sideNav.style.width = "300px";
-    main.style.left="300px";
-    header.style.marginLeft = "300px";
+    sideNav.style.width = sideNavWidth;
+    main.style.left = sideNavWidth;
+    header.style.marginLeft = sideNavWidth;
 
     sideNavIcon.style.transform = "rotate(135deg)";
     sideNavIcon.style.webkitTransform = "rotate(135deg)";
