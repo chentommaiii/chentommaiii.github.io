@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2f48bc84.chunk.css",
+    "main.js": "/static/js/main.7da521c7.chunk.js",
+    "main.js.map": "/static/js/main.7da521c7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8177c0dd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8177c0dd.js.map",
+    "static/js/2.faa7c200.chunk.js": "/static/js/2.faa7c200.chunk.js",
+    "static/js/2.faa7c200.chunk.js.map": "/static/js/2.faa7c200.chunk.js.map",
+    "static/js/3.209b4eab.chunk.js": "/static/js/3.209b4eab.chunk.js",
+    "static/js/3.209b4eab.chunk.js.map": "/static/js/3.209b4eab.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.2f48bc84.chunk.css.map": "/static/css/main.2f48bc84.chunk.css.map",
+    "static/js/2.faa7c200.chunk.js.LICENSE.txt": "/static/js/2.faa7c200.chunk.js.LICENSE.txt",
+    "static/media/Crew.css": "/static/media/background-crew-tablet.16d51cf6.jpg",
+    "static/media/Destination.css": "/static/media/background-destination-tablet.8f55d346.jpg",
+    "static/media/Home.css": "/static/media/background-home-tablet.bc9efcc3.jpg",
+    "static/media/Technology.css": "/static/media/background-technology-tablet.48c38b02.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8177c0dd.js",
+    "static/js/2.faa7c200.chunk.js",
+    "static/css/main.2f48bc84.chunk.css",
+    "static/js/main.7da521c7.chunk.js"
+  ]
+}
