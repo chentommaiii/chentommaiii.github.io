@@ -17,6 +17,8 @@ let sideNavWidth = "20%";
 
 window.addEventListener("scroll", parralax)
 
+window.addEventListener("scroll", reveal)
+
 // When the user scrolls the page, execute myFunction 
 window.addEventListener("scroll", myFunction)
 
@@ -71,4 +73,18 @@ logo.onclick = function() {
 function parralax() {
   let offset = window.pageYOffset;
   container.style.backgroundPositionY = offset * 0.8 + "px";
+}
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for(var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 30;
+
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add('active');
+    }
+  }
 }
