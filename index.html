@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Home</title>
+    <title>Tommy Chen | Home</title>
     <link rel="stylesheet" href="style.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
@@ -11,13 +11,14 @@
     </style>
   </head>
   <body>
-    <div id="mySideNav" class="side-nav">
+    <!-- Navigation Bar -->
+    <div id="side-nav">
       <a href="/index.html">Home</a>
       <a href="/bouncing-ball/3D_tutorial.html">UI/UX Design</a>
       <a href="/bouncing-ball/3D_tutorial.html">Web Development</a>
       <a href="/bouncing-ball/3D_tutorial.html">Mobile App Development</a>
       <a href="/bouncing-ball/3D_tutorial.html">Game Development</a>
-      <a href="/crowdfunding-product-page/index.html">Crowdfunding Product Page</a>
+      <a href="https://tmmychn.github.io/crowdfunding-product-page-main/">Crowdfunding Product Page</a>
       <a href="https://tmmychn.github.io/space-tourism-website/">Space Tourism Website</a>
     </div>
     <div class="main">
@@ -27,11 +28,12 @@
       </header>
       <div class="overlay"></div>
       <div id="container-home" class="container">
+        <!-- Introduction Card -->
         <div class="intro-card">
           <div class="intro-card-glass">
             <h1>Hey, I'm<br />Tommy Chen</h1>
             <p>
-              I'm a Digital Media Technology Engineering student in Xiamen
+              I'm a Digital Media Technology Engineering student from Xiamen
               University Malaysia. I am very passionate in pursuing fields such
               as UI/UX Design, Web Development and Mobile App Development.<br />
               <br />I believe that my outstanding problem-solving capability,
@@ -56,52 +58,66 @@
           </div>
         </div>
       </div>
+      <!-- Content -->
       <div class="content">
-        <h1 id="home-sub-title">My work</h1>
+        <h2 id="home-sub-title">My work</h2>
         <div class="card-container">
-          <div
-            class="long-card"
-            onclick="location.href='portfolioContent.html';"
-          >
+          <!-- First Card -->
+          <div class="long-card">
+            <img
+              src="images/space-toursim-preview.png"
+              class="card-img"
+              alt="Space Tourism Website"
+            />
+            <div class="card-overlay"></div>
+            <div class="long-card-content">
+              <h3>Space Toruism Website</h3>
+              <h4>ReactJS, HTML, CSS, JQuery</h4>
+              <p>A responsive space tourism website that displays information <br>about the destinations, crew and technology.</p>
+              <div class="view-project" 
+                onclick="window.open('https://tmmychn.github.io/space-tourism-website/', 'mywindow');"
+              >
+                <h5>View Project</h5>
+                <div class="view-project-arrow"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div class="long-card">
             <img
               src="images/Handz%20-%2001.jpg"
               class="card-img"
-              alt="ARID image"
+              alt="ARID"
             />
             <div class="card-overlay"></div>
             <div class="long-card-content">
-              <h2>Augmented Reality for<br />Interior Design</h2>
-              <h3>Mobile App Development<br />UI/UX Design</h3>
-              <div class="view-project">
-                <h4>View Project</h4>
+              <h3>Augmented Reality for<br />Interior Design</h3>
+              <h4>Unity, AR Foundation, ARKit, Figma</h4>
+              <p>A mobile application that allows the user to envision a design <br> of a room/space with AR.</p>
+              <div class="view-project"
+                onclick="location.href='portfolioContent.html';"
+              >
+                <h5>View Project</h5>
                 <div class="view-project-arrow"></div>
               </div>
             </div>
           </div>
-          <div class="long-card">
-            <img src="images/MyCuti.jpg" class="card-img" alt="MyCuti image" />
-            <div class="card-overlay"></div>
-            <div class="long-card-content">
-              <h2><br />MyCuti</h2>
-              <h3>Mobile App Development<br />UI/UX Design</h3>
-              <div class="view-project">
-                <h4>View Project</h4>
-                <div class="view-project-arrow"></div>
-              </div>
-            </div>
-          </div>
+          <!-- Third Card -->
           <div class="long-card">
             <img
-              src="images/portfolio.jpg"
+              src="images/crowdfunding-preview.jpg"
               class="card-img"
-              alt="portfolio image"
+              alt="crowdfunding product page"
             />
             <div class="card-overlay"></div>
             <div class="long-card-content">
-              <h2><br />Portfolio Re-design</h2>
-              <h3>Web Development<br />UI/UX Design</h3>
-              <div class="view-project">
-                <h4>View Project</h4>
+              <h3><br />Mastercraft Bamboo Monitor Riser <br>Crowdfunding Website</h3>
+              <h4>HTML, Parcel, CSS/SASS, ES Module</h4>
+              <p>An interactive product crowdfunding website that <br>displays information on the crowdfund campaign.</p>
+              <div class="view-project"
+                onclick="window.open('https://tmmychn.github.io/crowdfunding-product-page-main/', 'mywindow');"
+              >
+                <h5>View Project</h5>
                 <div class="view-project-arrow"></div>
               </div>
             </div>
@@ -121,7 +137,7 @@
       </script>
     </div>
     <footer>
-      <p style="color: black">Proudly Presented to You By Tommy Chen, 2021</p>
+      <p>Proudly Presented to You By Tommy Chen, 2021</p>
     </footer>
   </body>
 </html>

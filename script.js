@@ -3,7 +3,7 @@ var header = document.querySelector("header");
 
 var logo = document.getElementsByClassName("logo")[0];
 
-var sideNav = document.getElementById("mySideNav");
+var sideNav = document.getElementById("side-nav");
 var main = document.getElementsByClassName("main")[0];
 var header = document.getElementsByClassName("header")[0];
 
