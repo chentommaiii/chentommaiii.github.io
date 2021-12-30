@@ -75,6 +75,7 @@ function parralax() {
   container.style.backgroundPositionY = offset * 0.8 + "px";
 }
 
+// Scroll reveal effect
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
@@ -85,6 +86,13 @@ function reveal() {
 
     if (revealTop < windowHeight - revealPoint) {
       reveals[i].classList.add('active');
+
+       // Remove .reveal class after animation
+      setTimeout(removeReveal, 2000, reveals[i])
     }
   }
+}
+
+function removeReveal(reveal) {
+  reveal.classList.remove('reveal');
 }
