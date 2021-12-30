@@ -370,6 +370,7 @@ header .logo:hover {
 .long-card-content p {
   line-height: 1.5rem;
   color: rgba(255, 255, 255, 0.6);
+  max-width: 45ch;
 }
 
 .card-img {
@@ -386,7 +387,7 @@ header .logo:hover {
   position: absolute;
   top: 0px;
   left: 0px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.65);
   border-radius: 1rem;
 }
 
@@ -546,6 +547,8 @@ footer p {
 }
 
 iframe {
+  width: 750px;
+  height: 415px;
   margin-top: 5%;
 }
 
@@ -581,6 +584,7 @@ iframe {
   }
 }
 
+/* mobile */
 @media only screen and (max-width: 600px) {
   html {
     font-size: 3.5vw;
@@ -724,6 +728,11 @@ iframe {
     line-height: 2rem;
   }
 
+  .content h2 {
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 20px;
+  }
+
   .card-container {
     position: relative;
     width: 100%;
@@ -737,7 +746,7 @@ iframe {
   }
 
   .long-card-content {
-    padding: 3rem 0 0 1rem;
+    padding: 0 0 1rem 1.5rem;
     height: 80%;
   }
 
@@ -786,20 +795,35 @@ iframe {
     text-justify: inter-word;
   }
 
+  .textbox h1 {
+    padding: 0 0 0 10px;
+  }
+
   .textbox h2 {
     font-size: 1.3rem;
     line-height: 2rem;
   }
 
+  .textbox h4 {
+    padding: 10px 0 0 10px;
+  }
+
   .textbox p {
     font-size: 1rem;
     line-height: 1.5rem;
+    padding: 15px 0 0 10px;
   }
 
   .content-img {
     align-self: center;
+    width: 100%;
     height: 15em;
     border-radius: 0.5rem;
+  }
+
+  iframe {
+    width: 350px;
+    height: 200px;
   }
 
   #content-container__content {
