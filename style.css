@@ -183,6 +183,7 @@ header .logo:hover {
   left: 0px;
   background: rgba(0, 0, 0, 0.5);
   transform: translateZ(-100px);
+  -webkit-transform: translateZ(-100px);
 }
 
 #content-page__overlay {
